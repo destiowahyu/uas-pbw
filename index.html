@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pemesanan Kursi Bioskop Online</title>
+  </head>
+  <body>
+    <div class="movie-container">
+      <label> Silahkan Pilih Film :</label>
+      <select id="movie">
+        <option value="41000">Yowis Ben 3 (Rp 40.000)</option>
+        <option value="41000">Gundala (Rp 40.000)</option>
+        <option value="41000">Rampage (Rp 40.000)</option>
+        <option value="41000">Yowis Ben Finale (Rp. 40.000)</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Tersedia</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Dipilih</small>
+      </li>
+      <li>
+        <div class="seat sold"></div>
+        <small>Telah Dipesan</small>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="huruf">A</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat sold" onClick="alert('Seat A3 sudah terisi. Silahkan pilih seat lainnya.')">3</div>
+        <div class="seat sold" onClick="alert('Seat A4 sudah terisi. Silahkan pilih seat lainnya.')">4</div>
+        <div class="seat sold" onClick="alert('Seat A5 sudah terisi. Silahkan pilih seat lainnya.')">5</div>
+        <div class="seat">6</div>
+      </div>
+
+      <div class="row">
+        <div class="huruf">B</div>
+        <div class="seat">1</div>
+        <div class="seat sold" onClick="alert('Seat B2 sudah terisi. Silahkan pilih seat lainnya.')">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+      </div>
+      <div class="row">
+        <div class="huruf">C</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat sold" onClick="alert('Seat C4 sudah terisi. Silahkan pilih seat lainnya.')">4</div>
+        <div class="seat sold" onClick="alert('Seat C5 sudah terisi. Silahkan pilih seat lainnya.')">5</div>
+        <div class="seat">6</div>
+      </div>
+      <div class="row">
+        <div class="huruf">D</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+      </div>
+      <div class="row">
+        <div class="huruf">E</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+      </div>
+      <div class="row">
+        <div class="huruf">F</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+      </div>
+      <div class="row">
+        <div class="huruf">G</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+      </div>
+      <div class="row">
+        <div class="huruf">H</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+      </div>
+    </div>
+
+    <p class="text">
+      Anda telah memilih kursi dengan jumlah <span id="count">0</span> dengan harga Rp. <span id="total">0</span> (sudah termasuk biaya admin)
+    <script src="script.js"></script>
+  </body>
+</html>
